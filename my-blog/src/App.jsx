@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from '/.components/Header'
-import Footer from 'components/Footer'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import PostPage from './pages/PostPage'
 
 const App = () => {
-  const [posts, setpPosts] = useState([])
+  const [posts, setPosts] = useState([])
 
   const addPost = (post) => {
-    setpPosts([post, ...posts])
+    setPosts([post, ...posts])
   }
 
   return (
