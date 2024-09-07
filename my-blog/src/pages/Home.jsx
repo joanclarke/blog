@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>My Blog</h1>
+      <h1>Blog Home</h1>
       <NewPost onAddPost={addPost} />
       <PostList posts={posts} />
     </div>
